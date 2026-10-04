@@ -1,0 +1,19 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><meta name="description" content="INFOT 2 Sky Portfolio laboratory website login"><title>Sky Portfolio | INFOT 2 Login</title><link rel="stylesheet" href="login_style.css"></head><body>
+<div class="sky"><span class="cloud c1"></span><span class="cloud c2"></span><span class="cloud c3"></span></div>
+<div class="login-shell">
+  <section class="login-visual"><div class="brand">☁ SKY<br> JOHN ANDREI M.DIMALALUAN</div><div class="visual-content"><div>✦ PERSONAL PORTFOLIO • INFOT 2</div><h1>Welcome to my<br>little piece of <span>sky.</span></h1><p>A polished INFOT 2 laboratory website built with HTML, CSS, and JavaScript—with a moving cloud theme and interactive pages.</p><ul class="feature-list"><li>Responsive navigation</li><li>Animated sky and clouds</li><li>Interactive gallery and forms</li></ul></div><small>Web Systems and Technologies I</small></section>
+  <section class="form-side"><div id="loginPanel" class="form active"><h2>Sign in</h2><p>Enter your account to continue.</p><form id="loginForm"><div class="field"><label for="loginUsername">Username</label><input id="loginUsername" type="text" autocomplete="username" required></div><div class="field"><label for="loginPassword">Password</label><input id="loginPassword" type="password" autocomplete="current-password" required></div><label class="show-password"><input id="showLoginPass" type="checkbox"> Show password</label><div id="loginMessage" class="message"></div><button class="auth-btn">LOGIN TO MY WEBSITE</button></form><div class="switch">Don't have an account? <button type="button" id="showSignup">Sign up</button></div></div>
+  <div id="signupPanel" class="form"><h2>Create account</h2><p>Make a local account for the laboratory.</p><form id="signupForm"><div class="field"><label for="signupUsername">Username</label><input id="signupUsername" type="text" required></div><div class="field"><label for="signupPassword">Password</label><input id="signupPassword" type="password" required></div><div class="field"><label for="signupConfirm">Confirm password</label><input id="signupConfirm" type="password" required></div><label class="show-password"><input id="showSignupPass" type="checkbox"> Show password</label><div id="signupMessage" class="message"></div><button class="auth-btn">CREATE ACCOUNT</button></form><div class="switch">Already have an account? <button type="button" id="showLogin">Sign in</button></div></div>
+  <div id="accountSuccessModal" class="success-modal" aria-hidden="true">
+    <div class="success-modal-backdrop"></div>
+    <div class="success-modal-card" role="dialog" aria-modal="true" aria-labelledby="successModalTitle">
+      <button type="button" class="success-modal-close" id="closeSuccessModal" aria-label="Close">×</button>
+      <div class="success-icon">✓</div>
+      <span class="success-kicker">ACCOUNT READY</span>
+      <h3 id="successModalTitle">Account created successfully!</h3>
+      <p>Your account has been created. You can now sign in using your new username and password.</p>
+      <button type="button" class="success-modal-btn" id="successModalLogin">CONTINUE TO LOGIN</button>
+    </div>
+  </div>
+</section>
+</div><script src="script.js"></script></body></html>
